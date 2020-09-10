@@ -183,6 +183,10 @@ module "support01-public-subnets" {
   extra_tags  = var.extra_tags
 }
 
+##########################
+# Support01 IGW         ##
+##########################
+
 resource "aws_internet_gateway" "sup01-igw" {
 
   vpc_id = module.vpc-support01.vpc_id
